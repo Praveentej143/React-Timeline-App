@@ -1,4 +1,5 @@
 // Write your code here
+import {AiFillCalendar} from 'react-icons/ai'
 import './index.css'
 
 const ProjectTimelineCard = props => {
@@ -13,7 +14,20 @@ const ProjectTimelineCard = props => {
 
   return (
     <div className="project-timeline">
-      <h1>{projectTitle}</h1>
+      <div>
+        <img src={imageUrl} className="project-img" alt="project" />
+      </div>
+      <div className="head-container">
+        <h1 className="title">{projectTitle}</h1>
+        <div className="timer-container">
+          <AiFillCalendar />
+          <p>{duration}</p>
+        </div>
+      </div>
+      <p className="desc">{description}</p>
+      <a href={projectUrl} className="project-link">
+        Visit
+      </a>
     </div>
   )
 }

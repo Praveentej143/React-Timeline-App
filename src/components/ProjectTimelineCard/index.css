@@ -1,1 +1,20 @@
 /* Write your CSS here */
+.project-img {
+  width: 100%;
+}
+.desc {
+  font-size: 18px;
+}
+.title {
+  color: #1e293b;
+  font-size: 24px;
+}
+.timer-container {
+  color: #1e293b;
+}
+.project-link {
+  text-decoration: none;
+  color: #0967d2;
+  font-size: 20px;
+  font-weight: bold;
+}

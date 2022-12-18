@@ -8,10 +8,11 @@ const TimeLineView = props => {
   const {timelineItemsList} = props
 
   const renderTimeline = item => {
-    if (item.categoryId === 'PROJECT') {
-      return <ProjectTimelineCard key={item.id} projectDetails={item} />
+    if (item.categoryId === 'COURSE') {
+      return <CourseTimelineCard key={item.id} courseDetails={item} />
     }
-    return <CourseTimelineCard key={item.id} courseDetails={item} />
+
+    return <ProjectTimelineCard key={item.id} projectDetails={item} />
   }
 
   return (
@@ -19,16 +20,16 @@ const TimeLineView = props => {
       <div className="bg-container">
         <div className="app-container">
           <div className="header-container">
-            <h1 className="main-page-heading">MY JOURNEY OF</h1>
-            <h1 className="heading">CCBP 4.0</h1>
+            <h1 className="main-page-heading">MY JOURNEY OF CCBP 4.0</h1>
           </div>
-          <div>
+          <div style={{width: '100%', height: '95vh'}}>
             <Chrono
-              items={timelineItemsList}
-              mode="VERTICAL_ALTERNATING"
               theme={{
                 secondary: 'white',
               }}
+              items={timelineItemsList}
+              mode="VERTICAL_ALTERNATING"
+              cardWidth={500}
             >
               {timelineItemsList.map(eachItem => renderTimeline(eachItem))}
             </Chrono>

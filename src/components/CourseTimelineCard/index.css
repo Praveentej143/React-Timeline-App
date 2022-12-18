@@ -12,3 +12,25 @@
   justify-content: space-between;
   align-items: center;
 }
+.tags-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding: 0%;
+}
+.each-tag {
+  list-style-type: none;
+  padding: 0%;
+  margin: 8px;
+}
+.tag {
+  color: #1e293b;
+  font-weight: 500;
+  background-color: lightgrey;
+  padding: 2px 6px;
+  font-weight: bold;
+  margin: 0%;
+  border-radius: 3px;
+}
