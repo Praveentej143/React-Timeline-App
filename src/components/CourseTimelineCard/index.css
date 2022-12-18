@@ -1,0 +1,14 @@
+/* Write your CSS here */
+.course-timeline {
+  width: 100%;
+}
+.head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
